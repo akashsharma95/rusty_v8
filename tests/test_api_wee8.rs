@@ -9,12 +9,12 @@ fn wee8() {
     wasm_store_delete(store);
     wasm_engine_delete(engine);
 
-    let params : *mut rusty_v8::wee8::wasm_valtype_vec_t = std::ptr::null_mut::<rusty_v8::wee8::wasm_valtype_vec_t>();
-    wasm_valtype_vec_new_empty(params);
-    let results : *mut rusty_v8::wee8::wasm_valtype_vec_t = std::ptr::null_mut::<rusty_v8::wee8::wasm_valtype_vec_t>();
-    wasm_valtype_vec_new_empty(results);
+    // let params : *mut wasm_valtype_vec_t;
+    // wasm_valtype_vec_new_empty(params);
+    // let results : *mut wasm_valtype_vec_t;
+    // wasm_valtype_vec_new_empty(results);
 
-    let hello_type = wasm_functype_new(params, results);
-    wasm_functype_delete(hello_type);
+    // let hello_type = wasm_functype_new(params, results);
+    // wasm_functype_delete(hello_type);
   }
 }

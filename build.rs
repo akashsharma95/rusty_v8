@@ -19,6 +19,18 @@ fn main() {
   // Don't build V8 if "cargo doc" is being run. This is to support docs.rs.
   let is_cargo_doc = env::var_os("DOCS_RS").is_some();
 
+  // Invalidate the built crate whenever the wrapper changes
+  println!("cargo:rerun-if-changed=src/wee8.h");
+
+  // Generate bindings for wee8
+  bindgen::Builder::default()
+      .header("src/wee8.h")
+      .parse_callbacks(Box::new(bindgen::CargoCallbacks))
+      .generate()
+      .expect("Unable to generate bindings")
+      .write_to_file("src/wee8.rs")
+      .expect("Couldn't write bindings!");
+
   // Don't build V8 if the rust language server (RLS) is running.
   let is_rls = env::var_os("CARGO")
     .map(PathBuf::from)

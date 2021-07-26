@@ -83,6 +83,7 @@ paste = "1.0.5"
 [build-dependencies]
 which = "4.1.0"
 fslock = "0.1.6"
+bindgen = "0.59.1"
 
 [dev-dependencies]
 trybuild = "1.0.42"
