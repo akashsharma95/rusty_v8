@@ -292,6 +292,43 @@ pub union __mbstate_t {
   pub __mbstate8: [::std::os::raw::c_char; 128usize],
   pub _mbstateL: ::std::os::raw::c_longlong,
 }
+#[test]
+fn bindgen_test_layout___mbstate_t() {
+  assert_eq!(
+    ::std::mem::size_of::<__mbstate_t>(),
+    128usize,
+    concat!("Size of: ", stringify!(__mbstate_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<__mbstate_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(__mbstate_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__mbstate_t>())).__mbstate8 as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__mbstate_t),
+      "::",
+      stringify!(__mbstate8)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__mbstate_t>()))._mbstateL as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__mbstate_t),
+      "::",
+      stringify!(_mbstateL)
+    )
+  );
+}
 impl Default for __mbstate_t {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -341,6 +378,58 @@ pub struct __darwin_pthread_handler_rec {
   pub __arg: *mut ::std::os::raw::c_void,
   pub __next: *mut __darwin_pthread_handler_rec,
 }
+#[test]
+fn bindgen_test_layout___darwin_pthread_handler_rec() {
+  assert_eq!(
+    ::std::mem::size_of::<__darwin_pthread_handler_rec>(),
+    24usize,
+    concat!("Size of: ", stringify!(__darwin_pthread_handler_rec))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<__darwin_pthread_handler_rec>(),
+    8usize,
+    concat!("Alignment of ", stringify!(__darwin_pthread_handler_rec))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__darwin_pthread_handler_rec>())).__routine
+        as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__darwin_pthread_handler_rec),
+      "::",
+      stringify!(__routine)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__darwin_pthread_handler_rec>())).__arg as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__darwin_pthread_handler_rec),
+      "::",
+      stringify!(__arg)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__darwin_pthread_handler_rec>())).__next
+        as *const _ as usize
+    },
+    16usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__darwin_pthread_handler_rec),
+      "::",
+      stringify!(__next)
+    )
+  );
+}
 impl Default for __darwin_pthread_handler_rec {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -355,6 +444,45 @@ impl Default for __darwin_pthread_handler_rec {
 pub struct _opaque_pthread_attr_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 56usize],
+}
+#[test]
+fn bindgen_test_layout__opaque_pthread_attr_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_attr_t>(),
+    64usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_attr_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_attr_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_attr_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_attr_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_attr_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_attr_t>())).__opaque as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_attr_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
 }
 impl Default for _opaque_pthread_attr_t {
   fn default() -> Self {
@@ -371,6 +499,45 @@ pub struct _opaque_pthread_cond_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 40usize],
 }
+#[test]
+fn bindgen_test_layout__opaque_pthread_cond_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_cond_t>(),
+    48usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_cond_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_cond_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_cond_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_cond_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_cond_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_cond_t>())).__opaque as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_cond_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
+}
 impl Default for _opaque_pthread_cond_t {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -386,11 +553,89 @@ pub struct _opaque_pthread_condattr_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 8usize],
 }
+#[test]
+fn bindgen_test_layout__opaque_pthread_condattr_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_condattr_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_condattr_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_condattr_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_condattr_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_condattr_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_condattr_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_condattr_t>())).__opaque
+        as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_condattr_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct _opaque_pthread_mutex_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 56usize],
+}
+#[test]
+fn bindgen_test_layout__opaque_pthread_mutex_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_mutex_t>(),
+    64usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_mutex_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_mutex_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_mutex_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_mutex_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_mutex_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_mutex_t>())).__opaque as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_mutex_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
 }
 impl Default for _opaque_pthread_mutex_t {
   fn default() -> Self {
@@ -407,17 +652,134 @@ pub struct _opaque_pthread_mutexattr_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 8usize],
 }
+#[test]
+fn bindgen_test_layout__opaque_pthread_mutexattr_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_mutexattr_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_mutexattr_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_mutexattr_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_mutexattr_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_mutexattr_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_mutexattr_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_mutexattr_t>())).__opaque
+        as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_mutexattr_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
+}
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct _opaque_pthread_once_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 8usize],
 }
+#[test]
+fn bindgen_test_layout__opaque_pthread_once_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_once_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_once_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_once_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_once_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_once_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_once_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_once_t>())).__opaque as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_once_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct _opaque_pthread_rwlock_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 192usize],
+}
+#[test]
+fn bindgen_test_layout__opaque_pthread_rwlock_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_rwlock_t>(),
+    200usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_rwlock_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_rwlock_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_rwlock_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_rwlock_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_rwlock_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_rwlock_t>())).__opaque as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_rwlock_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
 }
 impl Default for _opaque_pthread_rwlock_t {
   fn default() -> Self {
@@ -434,12 +796,102 @@ pub struct _opaque_pthread_rwlockattr_t {
   pub __sig: ::std::os::raw::c_long,
   pub __opaque: [::std::os::raw::c_char; 16usize],
 }
+#[test]
+fn bindgen_test_layout__opaque_pthread_rwlockattr_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_rwlockattr_t>(),
+    24usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_rwlockattr_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_rwlockattr_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_rwlockattr_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_rwlockattr_t>())).__sig as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_rwlockattr_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_rwlockattr_t>())).__opaque
+        as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_rwlockattr_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
+}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct _opaque_pthread_t {
   pub __sig: ::std::os::raw::c_long,
   pub __cleanup_stack: *mut __darwin_pthread_handler_rec,
   pub __opaque: [::std::os::raw::c_char; 8176usize],
+}
+#[test]
+fn bindgen_test_layout__opaque_pthread_t() {
+  assert_eq!(
+    ::std::mem::size_of::<_opaque_pthread_t>(),
+    8192usize,
+    concat!("Size of: ", stringify!(_opaque_pthread_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<_opaque_pthread_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(_opaque_pthread_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_t>())).__sig as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_t),
+      "::",
+      stringify!(__sig)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_t>())).__cleanup_stack as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_t),
+      "::",
+      stringify!(__cleanup_stack)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<_opaque_pthread_t>())).__opaque as *const _
+        as usize
+    },
+    16usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(_opaque_pthread_t),
+      "::",
+      stringify!(__opaque)
+    )
+  );
 }
 impl Default for _opaque_pthread_t {
   fn default() -> Self {
@@ -849,6 +1301,43 @@ pub struct wasm_byte_vec_t {
   pub size: size_t,
   pub data: *mut wasm_byte_t,
 }
+#[test]
+fn bindgen_test_layout_wasm_byte_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_byte_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_byte_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_byte_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_byte_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_byte_vec_t>())).size as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_byte_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_byte_vec_t>())).data as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_byte_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
+}
 impl Default for wasm_byte_vec_t {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -934,6 +1423,43 @@ pub struct wasm_limits_t {
   pub min: u32,
   pub max: u32,
 }
+#[test]
+fn bindgen_test_layout_wasm_limits_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_limits_t>(),
+    8usize,
+    concat!("Size of: ", stringify!(wasm_limits_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_limits_t>(),
+    4usize,
+    concat!("Alignment of ", stringify!(wasm_limits_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_limits_t>())).min as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_limits_t),
+      "::",
+      stringify!(min)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_limits_t>())).max as *const _ as usize
+    },
+    4usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_limits_t),
+      "::",
+      stringify!(max)
+    )
+  );
+}
 pub const wasm_limits_max_default: u32 = 4294967295;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -948,6 +1474,43 @@ extern "C" {
 pub struct wasm_valtype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_valtype_t,
+}
+#[test]
+fn bindgen_test_layout_wasm_valtype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_valtype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_valtype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_valtype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_valtype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_valtype_vec_t>())).size as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_valtype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_valtype_vec_t>())).data as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_valtype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
 }
 impl Default for wasm_valtype_vec_t {
   fn default() -> Self {
@@ -1013,6 +1576,43 @@ extern "C" {
 pub struct wasm_functype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_functype_t,
+}
+#[test]
+fn bindgen_test_layout_wasm_functype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_functype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_functype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_functype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_functype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_functype_vec_t>())).size as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_functype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_functype_vec_t>())).data as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_functype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
 }
 impl Default for wasm_functype_vec_t {
   fn default() -> Self {
@@ -1081,6 +1681,45 @@ extern "C" {
 pub struct wasm_globaltype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_globaltype_t,
+}
+#[test]
+fn bindgen_test_layout_wasm_globaltype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_globaltype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_globaltype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_globaltype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_globaltype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_globaltype_vec_t>())).size as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_globaltype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_globaltype_vec_t>())).data as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_globaltype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
 }
 impl Default for wasm_globaltype_vec_t {
   fn default() -> Self {
@@ -1151,6 +1790,43 @@ pub struct wasm_tabletype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_tabletype_t,
 }
+#[test]
+fn bindgen_test_layout_wasm_tabletype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_tabletype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_tabletype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_tabletype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_tabletype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_tabletype_vec_t>())).size as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_tabletype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_tabletype_vec_t>())).data as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_tabletype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
+}
 impl Default for wasm_tabletype_vec_t {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -1220,6 +1896,45 @@ pub struct wasm_memorytype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_memorytype_t,
 }
+#[test]
+fn bindgen_test_layout_wasm_memorytype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_memorytype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_memorytype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_memorytype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_memorytype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_memorytype_vec_t>())).size as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_memorytype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_memorytype_vec_t>())).data as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_memorytype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
+}
 impl Default for wasm_memorytype_vec_t {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -1282,6 +1997,45 @@ extern "C" {
 pub struct wasm_externtype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_externtype_t,
+}
+#[test]
+fn bindgen_test_layout_wasm_externtype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_externtype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_externtype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_externtype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_externtype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_externtype_vec_t>())).size as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_externtype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_externtype_vec_t>())).data as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_externtype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
 }
 impl Default for wasm_externtype_vec_t {
   fn default() -> Self {
@@ -1427,6 +2181,45 @@ pub struct wasm_importtype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_importtype_t,
 }
+#[test]
+fn bindgen_test_layout_wasm_importtype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_importtype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_importtype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_importtype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_importtype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_importtype_vec_t>())).size as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_importtype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_importtype_vec_t>())).data as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_importtype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
+}
 impl Default for wasm_importtype_vec_t {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -1501,6 +2294,45 @@ extern "C" {
 pub struct wasm_exporttype_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_exporttype_t,
+}
+#[test]
+fn bindgen_test_layout_wasm_exporttype_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_exporttype_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_exporttype_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_exporttype_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_exporttype_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_exporttype_vec_t>())).size as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_exporttype_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_exporttype_vec_t>())).data as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_exporttype_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
 }
 impl Default for wasm_exporttype_vec_t {
   fn default() -> Self {
@@ -1578,6 +2410,84 @@ pub union wasm_val_t__bindgen_ty_1 {
   pub f64_: float64_t,
   pub ref_: *mut wasm_ref_t,
 }
+#[test]
+fn bindgen_test_layout_wasm_val_t__bindgen_ty_1() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_val_t__bindgen_ty_1>(),
+    8usize,
+    concat!("Size of: ", stringify!(wasm_val_t__bindgen_ty_1))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_val_t__bindgen_ty_1>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_val_t__bindgen_ty_1))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_val_t__bindgen_ty_1>())).i32_ as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_t__bindgen_ty_1),
+      "::",
+      stringify!(i32_)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_val_t__bindgen_ty_1>())).i64_ as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_t__bindgen_ty_1),
+      "::",
+      stringify!(i64_)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_val_t__bindgen_ty_1>())).f32_ as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_t__bindgen_ty_1),
+      "::",
+      stringify!(f32_)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_val_t__bindgen_ty_1>())).f64_ as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_t__bindgen_ty_1),
+      "::",
+      stringify!(f64_)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_val_t__bindgen_ty_1>())).ref_ as *const _
+        as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_t__bindgen_ty_1),
+      "::",
+      stringify!(ref_)
+    )
+  );
+}
 impl Default for wasm_val_t__bindgen_ty_1 {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -1586,6 +2496,39 @@ impl Default for wasm_val_t__bindgen_ty_1 {
       s.assume_init()
     }
   }
+}
+#[test]
+fn bindgen_test_layout_wasm_val_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_val_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_val_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_val_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_val_t))
+  );
+  assert_eq!(
+    unsafe { &(*(::std::ptr::null::<wasm_val_t>())).kind as *const _ as usize },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_t),
+      "::",
+      stringify!(kind)
+    )
+  );
+  assert_eq!(
+    unsafe { &(*(::std::ptr::null::<wasm_val_t>())).of as *const _ as usize },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_t),
+      "::",
+      stringify!(of)
+    )
+  );
 }
 impl Default for wasm_val_t {
   fn default() -> Self {
@@ -1607,6 +2550,43 @@ extern "C" {
 pub struct wasm_val_vec_t {
   pub size: size_t,
   pub data: *mut wasm_val_t,
+}
+#[test]
+fn bindgen_test_layout_wasm_val_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_val_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_val_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_val_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_val_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_val_vec_t>())).size as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_val_vec_t>())).data as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_val_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
 }
 impl Default for wasm_val_vec_t {
   fn default() -> Self {
@@ -1681,6 +2661,43 @@ extern "C" {
 pub struct wasm_frame_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_frame_t,
+}
+#[test]
+fn bindgen_test_layout_wasm_frame_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_frame_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_frame_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_frame_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_frame_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_frame_vec_t>())).size as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_frame_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_frame_vec_t>())).data as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_frame_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
 }
 impl Default for wasm_frame_vec_t {
   fn default() -> Self {
@@ -2358,6 +3375,43 @@ pub struct wasm_extern_vec_t {
   pub size: size_t,
   pub data: *mut *mut wasm_extern_t,
 }
+#[test]
+fn bindgen_test_layout_wasm_extern_vec_t() {
+  assert_eq!(
+    ::std::mem::size_of::<wasm_extern_vec_t>(),
+    16usize,
+    concat!("Size of: ", stringify!(wasm_extern_vec_t))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<wasm_extern_vec_t>(),
+    8usize,
+    concat!("Alignment of ", stringify!(wasm_extern_vec_t))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_extern_vec_t>())).size as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_extern_vec_t),
+      "::",
+      stringify!(size)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<wasm_extern_vec_t>())).data as *const _ as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(wasm_extern_vec_t),
+      "::",
+      stringify!(data)
+    )
+  );
+}
 impl Default for wasm_extern_vec_t {
   fn default() -> Self {
     let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
@@ -2535,6 +3589,69 @@ pub struct __va_list_tag {
   pub fp_offset: ::std::os::raw::c_uint,
   pub overflow_arg_area: *mut ::std::os::raw::c_void,
   pub reg_save_area: *mut ::std::os::raw::c_void,
+}
+#[test]
+fn bindgen_test_layout___va_list_tag() {
+  assert_eq!(
+    ::std::mem::size_of::<__va_list_tag>(),
+    24usize,
+    concat!("Size of: ", stringify!(__va_list_tag))
+  );
+  assert_eq!(
+    ::std::mem::align_of::<__va_list_tag>(),
+    8usize,
+    concat!("Alignment of ", stringify!(__va_list_tag))
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__va_list_tag>())).gp_offset as *const _ as usize
+    },
+    0usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__va_list_tag),
+      "::",
+      stringify!(gp_offset)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__va_list_tag>())).fp_offset as *const _ as usize
+    },
+    4usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__va_list_tag),
+      "::",
+      stringify!(fp_offset)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__va_list_tag>())).overflow_arg_area as *const _
+        as usize
+    },
+    8usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__va_list_tag),
+      "::",
+      stringify!(overflow_arg_area)
+    )
+  );
+  assert_eq!(
+    unsafe {
+      &(*(::std::ptr::null::<__va_list_tag>())).reg_save_area as *const _
+        as usize
+    },
+    16usize,
+    concat!(
+      "Offset of field: ",
+      stringify!(__va_list_tag),
+      "::",
+      stringify!(reg_save_area)
+    )
+  );
 }
 impl Default for __va_list_tag {
   fn default() -> Self {

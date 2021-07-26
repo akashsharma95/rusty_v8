@@ -26,7 +26,7 @@ fn main() {
   bindgen::Builder::default()
       .header("src/wee8.h")
       .parse_callbacks(Box::new(bindgen::CargoCallbacks))
-      .layout_tests(false)
+      .layout_tests(true)
       .derive_default(true)
       .rustfmt_bindings(true)
       .generate()
