@@ -26,6 +26,9 @@
 
 #![allow(clippy::missing_safety_doc)]
 #![allow(dead_code)]
+#![allow(non_upper_case_globals)]
+#![allow(non_camel_case_types)]
+#![allow(non_snake_case)]
 
 #[macro_use]
 extern crate bitflags;
@@ -81,8 +84,8 @@ pub mod json;
 pub mod script_compiler;
 // This module is intentionally named "V8" rather than "v8" to match the
 // C++ namespace "v8::V8".
-#[allow(non_snake_case)]
 pub mod V8;
+pub mod wee8;
 
 pub use array_buffer::*;
 pub use bigint::*;
